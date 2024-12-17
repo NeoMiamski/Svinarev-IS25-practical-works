@@ -1,9 +1,14 @@
-N = int(input("Введите делимое: "))
-K = int(input("Введите делитель: "))
-Quotient = 0
-while N >= K: #Деление в формате цикла
-    N = N - K
-    Quotient += 1
-Remainder = N
-print("Частное: ", Quotient)
-print("Остаток: ", Remainder)
+# Даны целые положительные числа N и K. Используя только операции сложения и вычитания, найти 
+# частное от деления нацело N на K, а также остаток от этого деления.
+try:
+    N = int(input("Введите делимое: "))
+    K = int(input("Введите делитель: "))
+    Quotient = 0
+    while N >= K: #Деление в формате цикла
+        N = N - K
+        Quotient += 1
+    Remainder = N
+    print("Частное: ", Quotient)
+    print("Остаток: ", Remainder)
+except ValueError:
+    print('Вы ввели неправильное значение')
