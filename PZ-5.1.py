@@ -4,7 +4,7 @@ try:
         l = len(t)
         
         return l
-    t = str(input())
+    t = input()
     s = LF(t)
     print(s)
 except ValueError:
