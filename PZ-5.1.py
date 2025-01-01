@@ -4,7 +4,7 @@ try:
         l = len(t)
         
         return l
-    t = input()
+    t = input("¬ведите любой текст: ")
     s = LF(t)
     print(s)
 except ValueError:
