@@ -4,8 +4,6 @@ try:
     S2 = input("Введите S2: ")
     S = input("Введите S: ")
     S = S1 + S
-    S = S - S1
-    ST = 
-    print(S)
+    S1 in S  
 except TypeError:
     print('Вы ввели неверное значение')
