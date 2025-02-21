@@ -2,10 +2,13 @@
 try:
     S1 = input("Введите S1: ")
     S = input("Введите S: ")
-    Skull = S1 + S
-    print(Skull)
-    S2 = input("Введите S2: ")
-    Skuf = S2 + S
-    print(Skuf)
+    skull = S1 + S
+    print(skull)
+    lenS1 = len(S1)
+    lenSkull = len(skull)
+    RS = []
+    for i in range(lenS1, lenSkull + 1):
+        RS.append(skull[i])
+    print(RS)
 except TypeError:
     print('Вы ввели неверное значение')
