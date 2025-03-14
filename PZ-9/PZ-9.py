@@ -4,17 +4,19 @@
 # каждому виду продукции, результаты вывести на экран.
 try:
     def minsells(A1, A2, A3, A4, A5, B1, B2, B3, B4, B5):
-        pearsells = min(A1, A2, A3, A4, A5)
-        carrotsells = min(B1, B2, B3, B4, B5)
-        return pearsells, carrotsells
-    s = ("груши 45 991 63 100 12 морковь 13 47 26 0 16")
-    d = s.split()
+        pear_sells = min(A1, A2, A3, A4, A5)
+        carrot_sells = min(B1, B2, B3, B4, B5)
+        return pear_sells, carrot_sells
+    d = "груши 45 991 63 100 12 морковь 13 47 26 0 16"
+    d = d.split()
     goods1, goods2 = d[0], d[6]
-    sells1, sells2 = d[1:6], d[7:12]
     A1, A2, A3, A4, A5, B1, B2, B3, B4, B5 = int(d[1]), int(d[2]), int(d[3]), int(d[4]), int(d[5]), int(d[7]), int(d[8]), int(d[9]), int(d[10]), int(d[11])
     production = minsells(A1, A2, A3, A4, A5, B1, B2, B3, B4, B5)
-    report = {goods1: sells1, goods2: sells2}
-    print("Минимальные продажи груш и моркови:", production, 'соответственно')
-    print(report)
+    sells1, sells2 = [A1, A2, A3, A4, A5], [B1, B2, B3, B4, B5]
+    report1 = {goods1: sells1}
+    report2 = {goods2: sells2}
+    C1, C2 = production[0], production[1]
+    print("Минимальные продажи груш:", C1, "\nМинимальные продажи и моркови:", C2)
+    print(report1, report2)
 except TypeError:
     print('Вы ввели неверное значение')
