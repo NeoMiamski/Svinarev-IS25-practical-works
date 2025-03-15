@@ -4,8 +4,8 @@
 try:
     T = input("Введите строку на русском: ")
     if 'А' and 'А' and 'А' in T:
-        print("Respect +")
+        print("True")
     else:
-        print("You dead friend")
+        print("False")
 except TypeError:
     print('Вы ввели неверное значение')
