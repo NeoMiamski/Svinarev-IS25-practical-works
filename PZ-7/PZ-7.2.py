@@ -4,8 +4,7 @@ try:
     S1 = input("Введите S1: ")
     S2 = input("Введите S2: ")
     if S1 in S:
-        Changed = S.replace(S1, S2, 1)
-        print(Changed)
+        print(S.replace(S1, S2, 1))
     else:
         print("S1 не входит в строку S!")
 except TypeError:
