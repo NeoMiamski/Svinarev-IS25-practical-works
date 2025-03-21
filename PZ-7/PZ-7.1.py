@@ -3,9 +3,12 @@
 # содержат ровно три буквы «А».
 try:
     Text = input("Введите строку на русском: ")
-    if 'А' and 'А' and 'А' in Text:
-        print("True")
-    else:
-        print("False")
+    Text = Text.upper()
+    Division = Text.split()
+    Quantity = 0
+    for i in range(0, len(Division)):
+        if Division[i].count('А') == 3:
+            Quantity += 1
+    print('В вашей строке', Quantity, "слов с тремя А")
 except TypeError:
     print('Вы ввели неверное значение')
