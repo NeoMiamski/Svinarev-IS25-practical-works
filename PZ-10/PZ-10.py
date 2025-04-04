@@ -6,8 +6,8 @@
 # 4. равны ли перечни товаров
 magnit = {'молоко', 'соль', 'сахар'}
 pyatorochka = {'мясо', 'молоко', 'сыр'}
-q1 = magnit - pyatorochka
-q2 = pyatorochka - magnit
+q1 = pyatorochka - magnit
+q2 = magnit - pyatorochka
 q3 = magnit | pyatorochka
 if magnit == pyatorochka:
     q4 = 'да'
