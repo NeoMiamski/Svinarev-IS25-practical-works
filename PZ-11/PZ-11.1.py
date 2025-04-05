@@ -12,12 +12,14 @@
 # Элементы кратные 5:
 # Количество элементов:
 # Среднее арифметическое элементов:
-import math
+
 L = ['3 9 6 18 -3 -15']
-O = ['5 15 -10 35 10']
 f1 = open('data1.txt', 'w')
 f1.writelines(L)
+
 f1.close()
 
+K = ['5 15 -10 35 10']
 f2 = open('data2.txt', 'w')
-print(math.prod(L))
+f2.writelines(K)
+f2.close()
