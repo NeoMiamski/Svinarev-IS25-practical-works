@@ -3,8 +3,6 @@
 # 'Каир'].
 sequence = ['Оттава', 'Москва', 'Пекин', 'Полоцк', 'Версаль', 'Дели', 'Каир']
 string = ''
-string.join(sequence)
+string = string.join(sequence)
 string = string.upper()
-countdown = {i for i in string if i in 'БВГДЖЗЙКЛМНПРСТФХЦЧШЩ'}
-consonants = []
-print(countdown)
+print([i for i in string if i in 'БВГДЖЗЙКЛМНПРСТФХЦЧШЩ'])
